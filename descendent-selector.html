@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            article p {
+                color: green;
+                font-size: 1.2em;
+                background: yellow;
+            }
+            
+            article div h2 {
+                color: blue;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <article>
+            <h6>Descenedent selector targets all child no matter how deep they are
+            nested inside the parent.</h6>
+            <h6>The more specific you get the more overhead is faced by browser.</h6>
+            <p>p inside article</p>
+            <h1>h1 inside article</h1>
+            <p>p inside article</p>
+            
+            <div>
+                <p style="padding: 20px">p inside div inside a</p>
+                <h2>h2 inside div inside aside</h2>
+            </div>
+            
+        </article>
+        
+        <p>p outside article not targeted by 'article p' descenedent selector</p>
+    </body>
+</html>

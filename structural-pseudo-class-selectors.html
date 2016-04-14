@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <link rel='stylesheet' href="styles.css">
+        <style>
+            span:first-child {
+                color:orange;
+            }
+            
+            h1:first-of-type {
+                color:aquamarine;
+            }
+            
+            /*ignore*/
+            span {
+                font-size: 1.5em;
+                display: block;
+            }
+            
+            div {
+                margin-left: 20px;
+            }
+        </style>
+    
+    </head>
+    <body>
+        <h6>Not supported by older browsers</h6>
+        <h6>span:first-child {...}  targets all spans that are the first child of their parent.</h6>
+        <div>
+            <span>First child.</span>
+            <span>Second child</span>
+        </div>
+        
+        <hr>
+        <div>
+            <p>This is p</p>
+            <span>This is span. not styled because it is not the first-child</span>
+        </div>
+        <hr><br><br>
+        
+        
+        
+        <h6>h1:first-of-type {...} targets the first occurence of h1 inside any parent. need not be the first child</h6>
+        <div>
+            <p>First child</p>
+            <h1>first heading</h1>
+            <h2>second heading</h2>
+        </div>
+        
+        <hr><br><br>
+        
+    </body>
+</html>

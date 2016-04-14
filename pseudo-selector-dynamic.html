@@ -1,0 +1,58 @@
+<htm>
+
+    <head>
+        <link rel='stylesheet' href="styles.css">
+        <style>
+        
+            a:link {
+                color:blue;
+            }
+            
+            a:visited {
+               color: red; 
+            }
+            
+            a:hover {
+                color:aquamarine;
+            }
+            
+            a:focus {
+                color:yellow;
+            }
+            
+            a:active{
+                color:green;
+            }
+            
+            
+            /* ignore */
+            a {
+                font-family: Arial;
+                font-size: 1.2em;
+                display: block;
+                margin-top: 15px;
+                text-decoration: none;
+            }
+            
+            ul { list-style-type: none; }
+        </style>
+    </head>
+    <body>
+        <h6>This targets the behavior of a tag</h6>
+        <h6>The most prefered order: :link, :visited, :hover, :focus, :active.</h6>
+        <h6>LoVe HAte</h6>
+        <h6>a:link   targets if anchor has href</h6>
+        
+        <h6>a:visited targets after link has been visited</h6>
+        <h6>a:hover targets even mouse hovers over a</h6>
+        <h6>a:focus </h6>
+        <h6>a:active</h6>
+        <h6></h6>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a>No href associated with this a</a></li>
+        </ul>
+    </body>
+</htm>

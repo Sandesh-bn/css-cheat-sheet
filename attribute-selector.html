@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <style>
+            img[alt] {
+                border: green 5px solid;
+                
+            }
+            
+            a[title='corporate'] {
+                color: aqua;
+                font-family: Arial;
+            }
+            
+            
+            
+            
+            /*ignore*/
+            a {
+                padding: 20px 0px 50px 0px;
+            }
+            img {
+                display:block;
+            }
+        </style>
+        <link rel='stylesheet' href='styles.css'>
+    </head>
+    <body>
+        <h6>Attribute selectors used to target elements that has an attribute.</h6>
+        <h6>img[alt] targets all element that has alt attribute</h6>
+        <h6>a[title='corporate'] targets all a that has title = 'corporate'</h6>
+        <h6>a[title~='blue'] blue can be anywhere in the title. not just the beginnig</h6>
+        <h6>a[title^='blue'] target a if title starts it 'blue'</h6>
+        <h6>a[title$='blue'] target a if title ends with 'blue'</h6>
+        <a href="#">No title</a><br>
+        <a href="#" title='corporate'>Link with title='corporate'</a>
+        <br>
+        <img src="#" width='100' height='100' alt='img1'/>
+        <img src="#" width='100' height='100' alt='img1'/>
+        <img src="#" width='100' height='100' />
+        <img src="#" width='100' height='100' alt='img1'/>
+    </body>
+</html>
